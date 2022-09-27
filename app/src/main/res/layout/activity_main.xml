@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Press Me"
-            android:textColor = "#000000"/>
+            android:textColor = "#757E8D"/>
 
     </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -46,6 +46,7 @@
         <!--on below line we are creating a new neumorphic frame layout-->
         <!--we are adding radius as 20 and shape as rectangle-->
         <com.borutsky.neumorphism.NeumorphicFrameLayout
+            android:id="@+id/flat"
             android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_margin="10dp"
@@ -61,7 +62,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Flat"
-                android:textColor="@color/white" />
+                android:textColor="#757E8D" />
+
+            <Button
+                android:id="@+id/button_press2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                />
 
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -84,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Concave"
-                android:textColor="@color/white" />
+                android:textColor="#757E8D" />
 
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -107,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Convex"
-                android:textColor="@color/white" />
+                android:textColor="#757E8D" />
 
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -130,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Pressed"
-                android:textColor="@color/white" />
+                android:textColor="#757E8D" />
 
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
