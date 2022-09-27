@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     android:clipChildren="false"
+    android:background="#E9EEFC"
     tools:context=".MainActivity">
+
 
     <!--on below line we are creating a new neumorphic frame layout-->
     <!--we are adding radius as 20 and shape as rectangle-->
     <com.borutsky.neumorphism.NeumorphicFrameLayout
         android:id="@+id/firstBlock"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="107dp"
+        android:layout_height="82dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="30dp"
         app:background_color="@color/purple_200"
         app:corner_radius="20dp"
-        app:shape="rectangle">
+        app:shape="circle">
 
         <!--inside this frame layout we are creating a simple text view-->
         <TextView
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Press Me"
-            android:textColor = "#757E8D"/>
+            android:textColor="#757E8D" />
 
     </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@android:color/transparent"
-                />
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
@@ -177,6 +177,14 @@
                 android:text="Flat"
                 android:textColor="@color/white" />
 
+            <Button
+                android:id="@+id/button_press3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#749CFB"
+
+                tools:ignore="SpeakableTextPresentCheck" />
+
         </com.borutsky.neumorphism.NeumorphicFrameLayout>
 
         <!--on below line we are creating a new neumorphic frame layout-->
@@ -187,6 +195,7 @@
             android:layout_height="80dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
             app:background_color="@color/purple_200"
             app:corner_radius="20dp"
             app:shape="rectangle"
